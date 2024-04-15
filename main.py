@@ -9,8 +9,8 @@ from flask_mysqldb import MySQL
 app = Flask(__name__)
 app.secret_key = 'torrent_under_format_uniform'
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'sachin'
-app.config['MYSQL_PASSWORD'] = 'pipeline'
+app.config['MYSQL_USER'] = 'liya'
+app.config['MYSQL_PASSWORD'] = 'greeshma'
 app.config['MYSQL_DB'] = 'cafe'
 Bootstrap(app)
 mysql = MySQL(app)
