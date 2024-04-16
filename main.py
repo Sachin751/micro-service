@@ -8,9 +8,10 @@ from flask_mysqldb import MySQL
 # Sets up app and relates with Bootstrap to use a quickform
 app = Flask(__name__)
 app.secret_key = 'torrent_under_format_uniform'
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'liya'
-app.config['MYSQL_PASSWORD'] = 'greeshma'
+app.config['MYSQL_HOST'] = 'database-container'
+app.config['MYSQL_PORT'] = 3306
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'sachin'
 app.config['MYSQL_DB'] = 'cafe'
 Bootstrap(app)
 mysql = MySQL(app)
@@ -55,4 +56,4 @@ def add_cafe():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
