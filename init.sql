@@ -12,3 +12,6 @@ CREATE TABLE IF NOT EXISTS cafe (
     website VARCHAR(255),
     menu VARCHAR(255)
 );
+GRANT ALL PRIVILEGES ON cafe.* TO 'liya'@'%';
+
+FLUSH PRIVILEGES;
